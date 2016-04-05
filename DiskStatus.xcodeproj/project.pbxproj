@@ -10,6 +10,15 @@
 		50143FC31CB1300000F3B769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50143FC21CB1300000F3B769 /* AppDelegate.swift */; };
 		50143FC51CB1300000F3B769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50143FC41CB1300000F3B769 /* Assets.xcassets */; };
 		50143FC81CB1300000F3B769 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50143FC61CB1300000F3B769 /* MainMenu.xib */; };
+		5059431D1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5059431C1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift */; settings = {ASSET_TAGS = (); }; };
+		5059431F1CB420E2006B7D59 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5059431E1CB420E2006B7D59 /* Podfile */; settings = {ASSET_TAGS = (); }; };
+		506D9BF01CB44C5A002A6624 /* UsedDiskSpaceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D9BEF1CB44C5A002A6624 /* UsedDiskSpaceLocator.swift */; settings = {ASSET_TAGS = (); }; };
+		50934FA61CB43281000711E0 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FA51CB43281000711E0 /* UnitConverter.swift */; settings = {ASSET_TAGS = (); }; };
+		50934FA91CB435D4000711E0 /* ByteConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FA81CB435D4000711E0 /* ByteConverter.swift */; settings = {ASSET_TAGS = (); }; };
+		50934FAC1CB43970000711E0 /* UnitConverterStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */; settings = {ASSET_TAGS = (); }; };
+		50934FAE1CB4398C000711E0 /* DataLocatorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */; settings = {ASSET_TAGS = (); }; };
+		50934FB01CB43A15000711E0 /* DataLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAF1CB43A15000711E0 /* DataLocator.swift */; settings = {ASSET_TAGS = (); }; };
+		ED959217B1C1199BC1C7DAAD /* Pods_DiskStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688CBD3B5E03802356E9EFA6 /* Pods_DiskStatus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +27,17 @@
 		50143FC41CB1300000F3B769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50143FC71CB1300000F3B769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		50143FC91CB1300000F3B769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5059431C1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeDiskSpaceLocator.swift; sourceTree = "<group>"; };
+		5059431E1CB420E2006B7D59 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		506D9BEF1CB44C5A002A6624 /* UsedDiskSpaceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsedDiskSpaceLocator.swift; sourceTree = "<group>"; };
+		50934FA51CB43281000711E0 /* UnitConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
+		50934FA81CB435D4000711E0 /* ByteConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteConverter.swift; sourceTree = "<group>"; };
+		50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitConverterStrategy.swift; sourceTree = "<group>"; };
+		50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLocatorStrategy.swift; sourceTree = "<group>"; };
+		50934FAF1CB43A15000711E0 /* DataLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLocator.swift; sourceTree = "<group>"; };
+		688CBD3B5E03802356E9EFA6 /* Pods_DiskStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiskStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5F1607FD720A106324464A5 /* Pods-DiskStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiskStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus.debug.xcconfig"; sourceTree = "<group>"; };
+		EF5C51EA4278A5AECACF08EC /* Pods-DiskStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiskStatus.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +45,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED959217B1C1199BC1C7DAAD /* Pods_DiskStatus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20A23C530288218D7F4CDD4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5F1607FD720A106324464A5 /* Pods-DiskStatus.debug.xcconfig */,
+				EF5C51EA4278A5AECACF08EC /* Pods-DiskStatus.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		50143FB61CB1300000F3B769 = {
 			isa = PBXGroup;
 			children = (
+				5059431E1CB420E2006B7D59 /* Podfile */,
 				50143FC11CB1300000F3B769 /* DiskStatus */,
 				50143FC01CB1300000F3B769 /* Products */,
+				20A23C530288218D7F4CDD4B /* Pods */,
+				AA089BFCEE36421A95C251FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,12 +83,43 @@
 		50143FC11CB1300000F3B769 /* DiskStatus */ = {
 			isa = PBXGroup;
 			children = (
+				50934FAA1CB43940000711E0 /* DataLocators */,
+				50934FA71CB43588000711E0 /* UnitConverters */,
 				50143FC21CB1300000F3B769 /* AppDelegate.swift */,
 				50143FC41CB1300000F3B769 /* Assets.xcassets */,
 				50143FC61CB1300000F3B769 /* MainMenu.xib */,
 				50143FC91CB1300000F3B769 /* Info.plist */,
 			);
 			path = DiskStatus;
+			sourceTree = "<group>";
+		};
+		50934FA71CB43588000711E0 /* UnitConverters */ = {
+			isa = PBXGroup;
+			children = (
+				50934FA51CB43281000711E0 /* UnitConverter.swift */,
+				50934FA81CB435D4000711E0 /* ByteConverter.swift */,
+				50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */,
+			);
+			name = UnitConverters;
+			sourceTree = "<group>";
+		};
+		50934FAA1CB43940000711E0 /* DataLocators */ = {
+			isa = PBXGroup;
+			children = (
+				5059431C1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift */,
+				506D9BEF1CB44C5A002A6624 /* UsedDiskSpaceLocator.swift */,
+				50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */,
+				50934FAF1CB43A15000711E0 /* DataLocator.swift */,
+			);
+			name = DataLocators;
+			sourceTree = "<group>";
+		};
+		AA089BFCEE36421A95C251FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				688CBD3B5E03802356E9EFA6 /* Pods_DiskStatus.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +129,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50143FCC1CB1300000F3B769 /* Build configuration list for PBXNativeTarget "DiskStatus" */;
 			buildPhases = (
+				37947FC2316E2BD6E9E873EB /* 📦 Check Pods Manifest.lock */,
 				50143FBB1CB1300000F3B769 /* Sources */,
 				50143FBC1CB1300000F3B769 /* Frameworks */,
 				50143FBD1CB1300000F3B769 /* Resources */,
+				0BB76FBD4CBA0A7A26F2C4AD /* 📦 Embed Pods Frameworks */,
+				3E1FBE299502819486D1027B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -115,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5059431F1CB420E2006B7D59 /* Podfile in Resources */,
 				50143FC51CB1300000F3B769 /* Assets.xcassets in Resources */,
 				50143FC81CB1300000F3B769 /* MainMenu.xib in Resources */,
 			);
@@ -122,11 +190,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0BB76FBD4CBA0A7A26F2C4AD /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37947FC2316E2BD6E9E873EB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3E1FBE299502819486D1027B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50143FBB1CB1300000F3B769 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50934FB01CB43A15000711E0 /* DataLocator.swift in Sources */,
+				506D9BF01CB44C5A002A6624 /* UsedDiskSpaceLocator.swift in Sources */,
+				50934FAE1CB4398C000711E0 /* DataLocatorStrategy.swift in Sources */,
+				50934FAC1CB43970000711E0 /* UnitConverterStrategy.swift in Sources */,
+				50934FA61CB43281000711E0 /* UnitConverter.swift in Sources */,
+				5059431D1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift in Sources */,
+				50934FA91CB435D4000711E0 /* ByteConverter.swift in Sources */,
 				50143FC31CB1300000F3B769 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +350,7 @@
 		};
 		50143FCD1CB1300000F3B769 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5F1607FD720A106324464A5 /* Pods-DiskStatus.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -239,6 +363,7 @@
 		};
 		50143FCE1CB1300000F3B769 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5C51EA4278A5AECACF08EC /* Pods-DiskStatus.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -268,6 +393,7 @@
 				50143FCE1CB1300000F3B769 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
