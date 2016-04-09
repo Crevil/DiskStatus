@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1713" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="8191"/>
     </dependencies>
@@ -12,27 +12,41 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
-        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DiskStatus" customModuleProvider="target">
-            <connections>
-                <outlet property="statusMenu" destination="Y6o-Fo-wbP" id="Dku-uE-Oh1"/>
-            </connections>
-        </customObject>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="DiskStatus" customModuleProvider="target"/>
         <menu id="Y6o-Fo-wbP">
             <items>
                 <menuItem title="Free disk space" id="nji-Ad-zbh">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="freeDiskSpace:" target="Voe-Tx-rLC" id="r7F-QD-x6U"/>
+                        <action selector="freeDiskSpaceClicked:" target="u7W-Y7-XGW" id="iod-V4-EJ9"/>
                     </connections>
                 </menuItem>
                 <menuItem title="Used disk space" id="54K-pY-qTN">
                     <modifierMask key="keyEquivalentModifierMask"/>
                     <connections>
-                        <action selector="usedDiskSpace:" target="Voe-Tx-rLC" id="UKa-Yn-QFy"/>
+                        <action selector="usedDiskSpaceClicked:" target="u7W-Y7-XGW" id="NcU-8o-cjF"/>
+                    </connections>
+                </menuItem>
+                <menuItem isSeparatorItem="YES" id="V7m-oz-WOR"/>
+                <menuItem title="Settings" id="P21-sX-4e5">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="settingsClicked:" target="u7W-Y7-XGW" id="IRT-ky-5zX"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Close" id="9bo-UV-N9P">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="closeClicked:" target="u7W-Y7-XGW" id="oqe-dd-9MF"/>
                     </connections>
                 </menuItem>
             </items>
-            <point key="canvasLocation" x="-217" y="195.5"/>
+            <point key="canvasLocation" x="-528.5" y="84.5"/>
         </menu>
+        <customObject id="u7W-Y7-XGW" customClass="StatusMenuController" customModule="DiskStatus" customModuleProvider="target">
+            <connections>
+                <outlet property="statusMenu" destination="Y6o-Fo-wbP" id="fcH-TL-OBz"/>
+            </connections>
+        </customObject>
     </objects>
 </document>

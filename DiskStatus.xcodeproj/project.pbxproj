@@ -12,6 +12,10 @@
 		50143FC81CB1300000F3B769 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50143FC61CB1300000F3B769 /* MainMenu.xib */; };
 		5059431D1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5059431C1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift */; settings = {ASSET_TAGS = (); }; };
 		5059431F1CB420E2006B7D59 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5059431E1CB420E2006B7D59 /* Podfile */; settings = {ASSET_TAGS = (); }; };
+		50662C861CB936E000025D04 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C851CB936E000025D04 /* StatusMenuController.swift */; settings = {ASSET_TAGS = (); }; };
+		50662C8F1CB94D0F00025D04 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C8D1CB94D0F00025D04 /* SettingsWindow.swift */; settings = {ASSET_TAGS = (); }; };
+		50662C901CB94D0F00025D04 /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50662C8E1CB94D0F00025D04 /* SettingsWindow.xib */; settings = {ASSET_TAGS = (); }; };
+		50662C921CB952E100025D04 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C911CB952E100025D04 /* SettingsManager.swift */; settings = {ASSET_TAGS = (); }; };
 		506D9BF01CB44C5A002A6624 /* UsedDiskSpaceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D9BEF1CB44C5A002A6624 /* UsedDiskSpaceLocator.swift */; settings = {ASSET_TAGS = (); }; };
 		50934FA61CB43281000711E0 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FA51CB43281000711E0 /* UnitConverter.swift */; settings = {ASSET_TAGS = (); }; };
 		50934FA91CB435D4000711E0 /* ByteConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FA81CB435D4000711E0 /* ByteConverter.swift */; settings = {ASSET_TAGS = (); }; };
@@ -29,6 +33,10 @@
 		50143FC91CB1300000F3B769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5059431C1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FreeDiskSpaceLocator.swift; sourceTree = "<group>"; };
 		5059431E1CB420E2006B7D59 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		50662C851CB936E000025D04 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		50662C8D1CB94D0F00025D04 /* SettingsWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsWindow.swift; path = SettingsWindow/SettingsWindow.swift; sourceTree = "<group>"; };
+		50662C8E1CB94D0F00025D04 /* SettingsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsWindow.xib; path = SettingsWindow/SettingsWindow.xib; sourceTree = "<group>"; };
+		50662C911CB952E100025D04 /* SettingsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsManager.swift; sourceTree = "<group>"; };
 		506D9BEF1CB44C5A002A6624 /* UsedDiskSpaceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsedDiskSpaceLocator.swift; sourceTree = "<group>"; };
 		50934FA51CB43281000711E0 /* UnitConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitConverter.swift; sourceTree = "<group>"; };
 		50934FA81CB435D4000711E0 /* ByteConverter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ByteConverter.swift; sourceTree = "<group>"; };
@@ -83,11 +91,14 @@
 		50143FC11CB1300000F3B769 /* DiskStatus */ = {
 			isa = PBXGroup;
 			children = (
+				50A3BFAD1CB97D5900310B41 /* SettingsWindow */,
 				50934FAA1CB43940000711E0 /* DataLocators */,
 				50934FA71CB43588000711E0 /* UnitConverters */,
 				50143FC21CB1300000F3B769 /* AppDelegate.swift */,
 				50143FC41CB1300000F3B769 /* Assets.xcassets */,
 				50143FC61CB1300000F3B769 /* MainMenu.xib */,
+				50662C851CB936E000025D04 /* StatusMenuController.swift */,
+				50662C911CB952E100025D04 /* SettingsManager.swift */,
 				50143FC91CB1300000F3B769 /* Info.plist */,
 			);
 			path = DiskStatus;
@@ -100,7 +111,7 @@
 				50934FA81CB435D4000711E0 /* ByteConverter.swift */,
 				50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */,
 			);
-			name = UnitConverters;
+			path = UnitConverters;
 			sourceTree = "<group>";
 		};
 		50934FAA1CB43940000711E0 /* DataLocators */ = {
@@ -111,7 +122,16 @@
 				50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */,
 				50934FAF1CB43A15000711E0 /* DataLocator.swift */,
 			);
-			name = DataLocators;
+			path = DataLocators;
+			sourceTree = "<group>";
+		};
+		50A3BFAD1CB97D5900310B41 /* SettingsWindow */ = {
+			isa = PBXGroup;
+			children = (
+				50662C8D1CB94D0F00025D04 /* SettingsWindow.swift */,
+				50662C8E1CB94D0F00025D04 /* SettingsWindow.xib */,
+			);
+			name = SettingsWindow;
 			sourceTree = "<group>";
 		};
 		AA089BFCEE36421A95C251FB /* Frameworks */ = {
@@ -182,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50662C901CB94D0F00025D04 /* SettingsWindow.xib in Resources */,
 				5059431F1CB420E2006B7D59 /* Podfile in Resources */,
 				50143FC51CB1300000F3B769 /* Assets.xcassets in Resources */,
 				50143FC81CB1300000F3B769 /* MainMenu.xib in Resources */,
@@ -248,7 +269,10 @@
 				50934FAE1CB4398C000711E0 /* DataLocatorStrategy.swift in Sources */,
 				50934FAC1CB43970000711E0 /* UnitConverterStrategy.swift in Sources */,
 				50934FA61CB43281000711E0 /* UnitConverter.swift in Sources */,
+				50662C921CB952E100025D04 /* SettingsManager.swift in Sources */,
 				5059431D1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift in Sources */,
+				50662C8F1CB94D0F00025D04 /* SettingsWindow.swift in Sources */,
+				50662C861CB936E000025D04 /* StatusMenuController.swift in Sources */,
 				50934FA91CB435D4000711E0 /* ByteConverter.swift in Sources */,
 				50143FC31CB1300000F3B769 /* AppDelegate.swift in Sources */,
 			);
