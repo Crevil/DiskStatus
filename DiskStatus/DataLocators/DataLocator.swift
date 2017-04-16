@@ -19,7 +19,7 @@ class DataLocator : DataLocatorStrategy {
         self.strategy = strategy
     }
     
-    func setStrategy(strategy: DataLocatorStrategy) {
+    func setStrategy(_ strategy: DataLocatorStrategy) {
         self.strategy = strategy
     }
 }

@@ -14,6 +14,7 @@ protocol SettingsWindowDelegate {
 
 class SettingsWindow: NSWindowController, NSWindowDelegate {
     @IBOutlet weak var refreshRateSelector: NSPopUpButton!
+    @IBOutlet weak var startOnButtonCheckBox: NSButtonCell!
     
     var delegate: SettingsWindowDelegate?
     var settingsManager: SettingsManagerProtocol?
@@ -36,29 +37,37 @@ class SettingsWindow: NSWindowController, NSWindowDelegate {
         super.windowDidLoad()
         
         setDropDown()
+        setStartOnBoot()
         
         self.window?.center()
         self.window?.makeKeyAndOrderFront(nil)
-        NSApp.activateIgnoringOtherApps(true)
+        NSApp.activate(ignoringOtherApps: true)
+    }
+    
+    func setStartOnBoot() {
+        let state = settingsManager?.getStartOnBoot()
+        
+        startOnButtonCheckBox!.state = state!
     }
     
     func setDropDown() {
         let refreshRates = settingsManager?.getRefreshRates()
         
-        refreshRateSelector.addItemsWithTitles((refreshRates?.map {
+        refreshRateSelector.addItems(withTitles: (refreshRates?.map {
             (double) -> String in
             return String(double)
             })!)
         
         let storedRefreshRateIndex = settingsManager!.getRefreshRateIndex()
         
-        refreshRateSelector.selectItemAtIndex(storedRefreshRateIndex)
+        refreshRateSelector.selectItem(at: storedRefreshRateIndex)
     }
     
-    func windowWillClose(notification: NSNotification) {
+    func windowWillClose(_ notification: Notification) {
         let value = refreshRateSelector.indexOfSelectedItem
         
         settingsManager!.setRefreshRateIndex(value)
+        settingsManager!.setStartOnBoot(startOnButtonCheckBox.state)
         
         delegate?.settingsUpdated()
     }

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol UnitConverterStrategy {
-    func toString(value: Double) -> String
+    func toString(_ value: Double) -> String
 }

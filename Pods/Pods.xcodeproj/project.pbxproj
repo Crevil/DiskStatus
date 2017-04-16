@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71C052B932ABAD8528AE963CC3DB28CD /* Pods-DiskStatus-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6455EB680AA0A93D7D00159B7F47F2E /* Pods-DiskStatus-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C8AE1CDF29EF2445DBED4F60AAEF9E3 /* Pods-DiskStatus-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 787FCEA1BD6F66EA7E1C16704ABAEEBE /* Pods-DiskStatus-dummy.m */; };
+		ADBC84B6A6C7B3DA3437902C17C561E9 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		2012803888BA6EACC7EA6C08AFDDD093 /* Pods-DiskStatus-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DiskStatus-acknowledgements.markdown"; sourceTree = "<group>"; };
+		525F212FA90BFADBB0BD1E880DD3BEB7 /* Pods_DiskStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiskStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B90030BDE122A77884186CC0BCD6B36 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		787FCEA1BD6F66EA7E1C16704ABAEEBE /* Pods-DiskStatus-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DiskStatus-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		96BC580B3465F4FAD4CFCA8A89C1F176 /* Pods-DiskStatus.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-DiskStatus.modulemap"; sourceTree = "<group>"; };
+		BDD64ADE143402B33FE5D6F24BA203B0 /* Pods-DiskStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DiskStatus.release.xcconfig"; sourceTree = "<group>"; };
+		BEA7A172C00B11DDA961EF307EA3D56D /* Pods-DiskStatus-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DiskStatus-acknowledgements.plist"; sourceTree = "<group>"; };
+		DC90BD7970520F8AD9C3F9CF056A8207 /* Pods-DiskStatus-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DiskStatus-frameworks.sh"; sourceTree = "<group>"; };
+		E050BA80D80D9C10D650053CC6AF1072 /* Pods-DiskStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DiskStatus.debug.xcconfig"; sourceTree = "<group>"; };
+		F6455EB680AA0A93D7D00159B7F47F2E /* Pods-DiskStatus-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DiskStatus-umbrella.h"; sourceTree = "<group>"; };
+		F9BD0174FA99D0F18C880523A549ACD8 /* Pods-DiskStatus-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DiskStatus-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		897456F25B892C8252A784C0F6E69E6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBC84B6A6C7B3DA3437902C17C561E9 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28C17CEF104526ACA07B6EEE217EC43E /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1CA6EBC2E57D96052268211209D6AA52 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28C17CEF104526ACA07B6EEE217EC43E /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				39E9EE8210D861DFD82346C1F5EB7218 /* Frameworks */,
+				958795E711BEE01AA7D52A0D3F9AE860 /* Products */,
+				E7828F3411847B051C1897983152D3E1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		958795E711BEE01AA7D52A0D3F9AE860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				525F212FA90BFADBB0BD1E880DD3BEB7 /* Pods_DiskStatus.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7828F3411847B051C1897983152D3E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E826E2CA69010ECF60F10814115796D0 /* Pods-DiskStatus */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		E826E2CA69010ECF60F10814115796D0 /* Pods-DiskStatus */ = {
+			isa = PBXGroup;
+			children = (
+				5B90030BDE122A77884186CC0BCD6B36 /* Info.plist */,
+				96BC580B3465F4FAD4CFCA8A89C1F176 /* Pods-DiskStatus.modulemap */,
+				2012803888BA6EACC7EA6C08AFDDD093 /* Pods-DiskStatus-acknowledgements.markdown */,
+				BEA7A172C00B11DDA961EF307EA3D56D /* Pods-DiskStatus-acknowledgements.plist */,
+				787FCEA1BD6F66EA7E1C16704ABAEEBE /* Pods-DiskStatus-dummy.m */,
+				DC90BD7970520F8AD9C3F9CF056A8207 /* Pods-DiskStatus-frameworks.sh */,
+				F9BD0174FA99D0F18C880523A549ACD8 /* Pods-DiskStatus-resources.sh */,
+				F6455EB680AA0A93D7D00159B7F47F2E /* Pods-DiskStatus-umbrella.h */,
+				E050BA80D80D9C10D650053CC6AF1072 /* Pods-DiskStatus.debug.xcconfig */,
+				BDD64ADE143402B33FE5D6F24BA203B0 /* Pods-DiskStatus.release.xcconfig */,
+			);
+			name = "Pods-DiskStatus";
+			path = "Target Support Files/Pods-DiskStatus";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB1F5DDC8B31F4CA8EF904A2B2BC2265 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C052B932ABAD8528AE963CC3DB28CD /* Pods-DiskStatus-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BE15F5F6489AC3F6B3285BAAD9383BDB /* Pods-DiskStatus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF01E9E04481E1171E3EEAE994FE877D /* Build configuration list for PBXNativeTarget "Pods-DiskStatus" */;
+			buildPhases = (
+				E61B3883D84EBA7F4ED758CF6E1CF8D1 /* Sources */,
+				897456F25B892C8252A784C0F6E69E6E /* Frameworks */,
+				EB1F5DDC8B31F4CA8EF904A2B2BC2265 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-DiskStatus";
+			productName = "Pods-DiskStatus";
+			productReference = 525F212FA90BFADBB0BD1E880DD3BEB7 /* Pods_DiskStatus.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 958795E711BEE01AA7D52A0D3F9AE860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE15F5F6489AC3F6B3285BAAD9383BDB /* Pods-DiskStatus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E61B3883D84EBA7F4ED758CF6E1CF8D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C8AE1CDF29EF2445DBED4F60AAEF9E3 /* Pods-DiskStatus-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		200617EA0D50A7A037D4A47CB6900492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42E0B13BBCEE1F71D98F0E48811FF508 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		62F41C069C9C281D9C29B92B39BAB6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD64ADE143402B33FE5D6F24BA203B0 /* Pods-DiskStatus.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DiskStatus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-DiskStatus/Pods-DiskStatus.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DiskStatus;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D8C35080F43145F3DBB806342CCFBA67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E050BA80D80D9C10D650053CC6AF1072 /* Pods-DiskStatus.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_VERSION = A;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-DiskStatus/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-DiskStatus/Pods-DiskStatus.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_DiskStatus;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42E0B13BBCEE1F71D98F0E48811FF508 /* Debug */,
+				200617EA0D50A7A037D4A47CB6900492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF01E9E04481E1171E3EEAE994FE877D /* Build configuration list for PBXNativeTarget "Pods-DiskStatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8C35080F43145F3DBB806342CCFBA67 /* Debug */,
+				62F41C069C9C281D9C29B92B39BAB6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

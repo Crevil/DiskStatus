@@ -11,13 +11,13 @@ import Foundation
 class UsedDiskSpaceLocator : DataLocatorStrategy {
     
     func getData() -> Double {
-        let fileManager = NSFileManager.defaultManager()
+        let fileManager = FileManager.default
         let value: Double
         do {
-            let attr = try fileManager.attributesOfFileSystemForPath(NSHomeDirectory())
+            let attr = try fileManager.attributesOfFileSystem(forPath: NSHomeDirectory())
             
-            let used = attr[NSFileSystemSize] as! Double
-            let free = attr[NSFileSystemFreeSize] as! Double
+            let used = attr[FileAttributeKey.systemSize] as! Double
+            let free = attr[FileAttributeKey.systemFreeSize] as! Double
             value = used - free
         } catch {
             value = 0

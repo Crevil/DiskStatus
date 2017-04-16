@@ -12,9 +12,24 @@ import Cocoa
 class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var refreshRate: NSPopUpButton!
     
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
+        let launcherApplicationIdentifier = "CaveOfCode.LauncherApplication"
+        
+        var startedAtLogin = false
+        for app in NSWorkspace.shared().runningApplications {
+            if app.bundleIdentifier == launcherApplicationIdentifier {
+                startedAtLogin = true
+            }
+        }
+        
+        if startedAtLogin {
+            DistributedNotificationCenter.default().post(name: "killme", object: Bundle.main.bundleIdentifier!)
+            NSLog("Kill launcher")
+        } else {
+            NSLog("Not started at login")
+        }
     }
     
-    func applicationWillTerminate(notification: NSNotification) {
+    func applicationWillTerminate(_ notification: Notification) {
     }
 }

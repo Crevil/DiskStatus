@@ -17,9 +17,9 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
     
     var dataLocator: DataLocator!
     var unitConverter: UnitConverter!
-    var timer: NSTimer!
+    var timer: Timer!
     
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
     override func awakeFromNib() {
         settingsManager = SettingsManager()
@@ -36,8 +36,21 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         statusItem.menu = statusMenu
         statusItem.title = "Loading..."
         
-        dataLocator = DataLocator(strategy: FreeDiskSpaceLocator())
+        initLocator()
         unitConverter = UnitConverter(strategy: ByteConverterStrategy())
+    }
+    
+    func initLocator() {
+        let status = settingsManager!.getShownStatus()
+        
+        switch status {
+        case 2:
+            dataLocator = DataLocator(strategy: UsedDiskSpaceLocator())
+        case 1:
+            dataLocator = DataLocator(strategy: FreeDiskSpaceLocator())
+        default:
+            dataLocator = DataLocator(strategy: FreeDiskSpaceLocator())
+        }
     }
     
     func initTimer() {
@@ -45,8 +58,8 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         
         timer?.invalidate()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(
-            refreshRate,
+        timer = Timer.scheduledTimer(
+            timeInterval: refreshRate,
             target: self,
             selector: "getData",
             userInfo: nil,
@@ -65,32 +78,34 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
     //
     // Menu actions
     //
-    @IBAction func freeDiskSpaceClicked(sender: NSMenuItem) {
+    @IBAction func freeDiskSpaceClicked(_ sender: NSMenuItem) {
         if dataLocator.strategy is FreeDiskSpaceLocator {
             return
         }
         
+        settingsManager?.setShownStatus(1)
         dataLocator.setStrategy(FreeDiskSpaceLocator())
         getData()
     }
     
-    @IBAction func usedDiskSpaceClicked(sender: AnyObject) {
+    @IBAction func usedDiskSpaceClicked(_ sender: AnyObject) {
         if dataLocator.strategy is UsedDiskSpaceLocator {
             return
         }
         
+        settingsManager?.setShownStatus(2)
         dataLocator.setStrategy(UsedDiskSpaceLocator())
         getData()
     }
     
-    @IBAction func settingsClicked(sender: NSMenuItem) {
-        settingsWindow?.showWindow(nil)
+    @IBAction func settingsClicked(_ sender: NSMenuItem) {
+        settingsWindow?.showWindow(self)
     }
     
-    @IBAction func closeClicked(sender: AnyObject) {
+    @IBAction func closeClicked(_ sender: AnyObject) {
         statusMenu.title = "Closing..."
         timer?.invalidate()
         
-        NSApplication.sharedApplication().terminate(self)
+        NSApplication.shared().terminate(self)
     }
 }
