@@ -17,9 +17,9 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
     
     var dataLocator: DataLocator!
     var unitConverter: UnitConverter!
-    var timer: NSTimer!
+    var timer: Timer!
     
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
+    let statusItem = NSStatusBar.system().statusItem(withLength: NSVariableStatusItemLength)
     
     override func awakeFromNib() {
         settingsManager = SettingsManager()
@@ -45,8 +45,8 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         
         timer?.invalidate()
         
-        timer = NSTimer.scheduledTimerWithTimeInterval(
-            refreshRate,
+        timer = Timer.scheduledTimer(
+            timeInterval: refreshRate,
             target: self,
             selector: "getData",
             userInfo: nil,
@@ -65,7 +65,7 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
     //
     // Menu actions
     //
-    @IBAction func freeDiskSpaceClicked(sender: NSMenuItem) {
+    @IBAction func freeDiskSpaceClicked(_ sender: NSMenuItem) {
         if dataLocator.strategy is FreeDiskSpaceLocator {
             return
         }
@@ -74,7 +74,7 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         getData()
     }
     
-    @IBAction func usedDiskSpaceClicked(sender: AnyObject) {
+    @IBAction func usedDiskSpaceClicked(_ sender: AnyObject) {
         if dataLocator.strategy is UsedDiskSpaceLocator {
             return
         }
@@ -83,14 +83,14 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         getData()
     }
     
-    @IBAction func settingsClicked(sender: NSMenuItem) {
+    @IBAction func settingsClicked(_ sender: NSMenuItem) {
         settingsWindow?.showWindow(nil)
     }
     
-    @IBAction func closeClicked(sender: AnyObject) {
+    @IBAction func closeClicked(_ sender: AnyObject) {
         statusMenu.title = "Closing..."
         timer?.invalidate()
         
-        NSApplication.sharedApplication().terminate(self)
+        NSApplication.shared().terminate(self)
     }
 }

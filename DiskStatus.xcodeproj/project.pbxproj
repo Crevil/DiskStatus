@@ -10,18 +10,18 @@
 		50143FC31CB1300000F3B769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50143FC21CB1300000F3B769 /* AppDelegate.swift */; };
 		50143FC51CB1300000F3B769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50143FC41CB1300000F3B769 /* Assets.xcassets */; };
 		50143FC81CB1300000F3B769 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50143FC61CB1300000F3B769 /* MainMenu.xib */; };
-		5059431D1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5059431C1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift */; settings = {ASSET_TAGS = (); }; };
-		5059431F1CB420E2006B7D59 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5059431E1CB420E2006B7D59 /* Podfile */; settings = {ASSET_TAGS = (); }; };
-		50662C861CB936E000025D04 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C851CB936E000025D04 /* StatusMenuController.swift */; settings = {ASSET_TAGS = (); }; };
-		50662C8F1CB94D0F00025D04 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C8D1CB94D0F00025D04 /* SettingsWindow.swift */; settings = {ASSET_TAGS = (); }; };
-		50662C901CB94D0F00025D04 /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50662C8E1CB94D0F00025D04 /* SettingsWindow.xib */; settings = {ASSET_TAGS = (); }; };
-		50662C921CB952E100025D04 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C911CB952E100025D04 /* SettingsManager.swift */; settings = {ASSET_TAGS = (); }; };
-		506D9BF01CB44C5A002A6624 /* UsedDiskSpaceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D9BEF1CB44C5A002A6624 /* UsedDiskSpaceLocator.swift */; settings = {ASSET_TAGS = (); }; };
-		50934FA61CB43281000711E0 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FA51CB43281000711E0 /* UnitConverter.swift */; settings = {ASSET_TAGS = (); }; };
-		50934FA91CB435D4000711E0 /* ByteConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FA81CB435D4000711E0 /* ByteConverter.swift */; settings = {ASSET_TAGS = (); }; };
-		50934FAC1CB43970000711E0 /* UnitConverterStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */; settings = {ASSET_TAGS = (); }; };
-		50934FAE1CB4398C000711E0 /* DataLocatorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */; settings = {ASSET_TAGS = (); }; };
-		50934FB01CB43A15000711E0 /* DataLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAF1CB43A15000711E0 /* DataLocator.swift */; settings = {ASSET_TAGS = (); }; };
+		5059431D1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5059431C1CB4203A006B7D59 /* FreeDiskSpaceLocator.swift */; };
+		5059431F1CB420E2006B7D59 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 5059431E1CB420E2006B7D59 /* Podfile */; };
+		50662C861CB936E000025D04 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C851CB936E000025D04 /* StatusMenuController.swift */; };
+		50662C8F1CB94D0F00025D04 /* SettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C8D1CB94D0F00025D04 /* SettingsWindow.swift */; };
+		50662C901CB94D0F00025D04 /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50662C8E1CB94D0F00025D04 /* SettingsWindow.xib */; };
+		50662C921CB952E100025D04 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50662C911CB952E100025D04 /* SettingsManager.swift */; };
+		506D9BF01CB44C5A002A6624 /* UsedDiskSpaceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506D9BEF1CB44C5A002A6624 /* UsedDiskSpaceLocator.swift */; };
+		50934FA61CB43281000711E0 /* UnitConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FA51CB43281000711E0 /* UnitConverter.swift */; };
+		50934FA91CB435D4000711E0 /* ByteConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FA81CB435D4000711E0 /* ByteConverter.swift */; };
+		50934FAC1CB43970000711E0 /* UnitConverterStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */; };
+		50934FAE1CB4398C000711E0 /* DataLocatorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */; };
+		50934FB01CB43A15000711E0 /* DataLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAF1CB43A15000711E0 /* DataLocator.swift */; };
 		ED959217B1C1199BC1C7DAAD /* Pods_DiskStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688CBD3B5E03802356E9EFA6 /* Pods_DiskStatus.framework */; };
 /* End PBXBuildFile section */
 
@@ -176,6 +176,7 @@
 				TargetAttributes = {
 					50143FBE1CB1300000F3B769 = {
 						CreatedOnToolsVersion = 7.0.1;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -382,6 +383,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CaveOfCode.DiskStatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -395,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CaveOfCode.DiskStatus;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

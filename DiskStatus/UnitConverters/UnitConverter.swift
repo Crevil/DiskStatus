@@ -11,7 +11,7 @@ import Foundation
 class UnitConverter {
     let strategy: UnitConverterStrategy
     
-    func toString(value: Double) -> String {
+    func toString(_ value: Double) -> String {
         return strategy.toString(value)
     }
     
