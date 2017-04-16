@@ -13,6 +13,8 @@ protocol SettingsManagerProtocol {
     func setRefreshRateIndex(_ value: Int)
     func getRefreshRates() -> [Int]
     func getRefreshRate() -> Int
+    func setShownStatus(_ value: DataLocatorType)
+    func getShownStatus() -> DataLocatorType
 }
 
 class SettingsManager: NSObject, SettingsManagerProtocol {
@@ -20,6 +22,7 @@ class SettingsManager: NSObject, SettingsManagerProtocol {
     let defaultRefreshRateIndex = 1
 
     let keyRefreshRateIndex = "refreshRateIndex"
+    let keyShownStatus = "shownStatus"
     
     let defaults = UserDefaults.standard
     
@@ -43,5 +46,27 @@ class SettingsManager: NSObject, SettingsManagerProtocol {
     
     func setRefreshRateIndex(_ refreshRateIndex: Int) {
         defaults.setValue(refreshRateIndex, forKey: keyRefreshRateIndex)
+    }
+    
+    
+    func setShownStatus(_ value: DataLocatorType) {
+        defaults.setValue(value.rawValue, forKey: keyShownStatus)
+    }
+    
+    func getShownStatus() -> DataLocatorType {
+        let defaultStatus = DataLocatorType.freeDiskSpace
+        
+        let rawShownStatus = defaults.string(forKey: keyShownStatus)
+        if (rawShownStatus == nil) {
+            setShownStatus(defaultStatus)
+            return defaultStatus
+        }
+        
+        if let dataLocator = DataLocatorType(rawValue: rawShownStatus!) {
+            return dataLocator
+        } else {
+            setShownStatus(defaultStatus)
+            return defaultStatus
+        }
     }
 }
