@@ -22,7 +22,6 @@
 		50934FAC1CB43970000711E0 /* UnitConverterStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */; };
 		50934FAE1CB4398C000711E0 /* DataLocatorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */; };
 		50934FB01CB43A15000711E0 /* DataLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAF1CB43A15000711E0 /* DataLocator.swift */; };
-		ED959217B1C1199BC1C7DAAD /* Pods_DiskStatus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688CBD3B5E03802356E9EFA6 /* Pods_DiskStatus.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +42,6 @@
 		50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitConverterStrategy.swift; sourceTree = "<group>"; };
 		50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLocatorStrategy.swift; sourceTree = "<group>"; };
 		50934FAF1CB43A15000711E0 /* DataLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLocator.swift; sourceTree = "<group>"; };
-		688CBD3B5E03802356E9EFA6 /* Pods_DiskStatus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DiskStatus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F1607FD720A106324464A5 /* Pods-DiskStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiskStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		EF5C51EA4278A5AECACF08EC /* Pods-DiskStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiskStatus.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -53,7 +51,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED959217B1C1199BC1C7DAAD /* Pods_DiskStatus.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +134,6 @@
 		AA089BFCEE36421A95C251FB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				688CBD3B5E03802356E9EFA6 /* Pods_DiskStatus.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -149,12 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50143FCC1CB1300000F3B769 /* Build configuration list for PBXNativeTarget "DiskStatus" */;
 			buildPhases = (
-				37947FC2316E2BD6E9E873EB /* 📦 Check Pods Manifest.lock */,
+				37947FC2316E2BD6E9E873EB /* [CP] Check Pods Manifest.lock */,
 				50143FBB1CB1300000F3B769 /* Sources */,
 				50143FBC1CB1300000F3B769 /* Frameworks */,
 				50143FBD1CB1300000F3B769 /* Resources */,
-				0BB76FBD4CBA0A7A26F2C4AD /* 📦 Embed Pods Frameworks */,
-				3E1FBE299502819486D1027B /* 📦 Copy Pods Resources */,
+				0BB76FBD4CBA0A7A26F2C4AD /* [CP] Embed Pods Frameworks */,
+				3E1FBE299502819486D1027B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,7 +167,7 @@
 		50143FB71CB1300000F3B769 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = "Bjørn Sørensen";
 				TargetAttributes = {
 					50143FBE1CB1300000F3B769 = {
@@ -213,14 +209,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BB76FBD4CBA0A7A26F2C4AD /* 📦 Embed Pods Frameworks */ = {
+		0BB76FBD4CBA0A7A26F2C4AD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,29 +224,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		37947FC2316E2BD6E9E873EB /* 📦 Check Pods Manifest.lock */ = {
+		37947FC2316E2BD6E9E873EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3E1FBE299502819486D1027B /* 📦 Copy Pods Resources */ = {
+		3E1FBE299502819486D1027B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,8 +302,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -350,8 +348,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -370,6 +370,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};

@@ -48,7 +48,7 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         timer = Timer.scheduledTimer(
             timeInterval: refreshRate,
             target: self,
-            selector: "getData",
+            selector: #selector(StatusMenuController.getData),
             userInfo: nil,
             repeats: true)
     }
