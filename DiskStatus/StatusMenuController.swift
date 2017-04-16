@@ -36,8 +36,19 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         statusItem.menu = statusMenu
         statusItem.title = "Loading..."
         
-        dataLocator = DataLocator(strategy: FreeDiskSpaceLocator())
+        initLocator()
         unitConverter = UnitConverter(strategy: ByteConverterStrategy())
+    }
+    
+    func initLocator() {
+        let status = settingsManager!.getShownStatus()
+        
+        switch status {
+        case .usedDiskSpace:
+            dataLocator = DataLocator(strategy: UsedDiskSpaceLocator())
+        case .freeDiskSpace:
+            dataLocator = DataLocator(strategy: FreeDiskSpaceLocator())
+        }
     }
     
     func initTimer() {
@@ -71,6 +82,7 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         }
         
         dataLocator.setStrategy(FreeDiskSpaceLocator())
+        settingsManager?.setShownStatus(DataLocatorType.freeDiskSpace)
         getData()
     }
     
@@ -80,6 +92,7 @@ class StatusMenuController: NSObject, SettingsWindowDelegate {
         }
         
         dataLocator.setStrategy(UsedDiskSpaceLocator())
+        settingsManager?.setShownStatus(DataLocatorType.usedDiskSpace)
         getData()
     }
     

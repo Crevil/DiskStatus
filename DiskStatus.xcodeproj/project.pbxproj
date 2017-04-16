@@ -22,6 +22,7 @@
 		50934FAC1CB43970000711E0 /* UnitConverterStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */; };
 		50934FAE1CB4398C000711E0 /* DataLocatorStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */; };
 		50934FB01CB43A15000711E0 /* DataLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50934FAF1CB43A15000711E0 /* DataLocator.swift */; };
+		50BC714A1EA39C05002EFC12 /* DataLocatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BC71491EA39C05002EFC12 /* DataLocatorType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		50934FAB1CB43970000711E0 /* UnitConverterStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnitConverterStrategy.swift; sourceTree = "<group>"; };
 		50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLocatorStrategy.swift; sourceTree = "<group>"; };
 		50934FAF1CB43A15000711E0 /* DataLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLocator.swift; sourceTree = "<group>"; };
+		50BC71491EA39C05002EFC12 /* DataLocatorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataLocatorType.swift; sourceTree = "<group>"; };
 		A5F1607FD720A106324464A5 /* Pods-DiskStatus.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiskStatus.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus.debug.xcconfig"; sourceTree = "<group>"; };
 		EF5C51EA4278A5AECACF08EC /* Pods-DiskStatus.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DiskStatus.release.xcconfig"; path = "Pods/Target Support Files/Pods-DiskStatus/Pods-DiskStatus.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +120,7 @@
 				506D9BEF1CB44C5A002A6624 /* UsedDiskSpaceLocator.swift */,
 				50934FAD1CB4398C000711E0 /* DataLocatorStrategy.swift */,
 				50934FAF1CB43A15000711E0 /* DataLocator.swift */,
+				50BC71491EA39C05002EFC12 /* DataLocatorType.swift */,
 			);
 			path = DataLocators;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BC714A1EA39C05002EFC12 /* DataLocatorType.swift in Sources */,
 				50934FB01CB43A15000711E0 /* DataLocator.swift in Sources */,
 				506D9BF01CB44C5A002A6624 /* UsedDiskSpaceLocator.swift in Sources */,
 				50934FAE1CB4398C000711E0 /* DataLocatorStrategy.swift in Sources */,
