@@ -39,6 +39,7 @@ class SettingsWindow: NSWindowController, NSWindowDelegate {
         
         self.window?.center()
         self.window?.makeKeyAndOrderFront(nil)
+        self.window?.level = Int(CGWindowLevelForKey(.floatingWindow))
         NSApp.activate(ignoringOtherApps: true)
     }
     
