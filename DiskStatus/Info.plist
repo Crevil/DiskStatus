@@ -35,6 +35,6 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>CFBundleDisplayName</key>
-	<string></string>
+	<string>DiskStatus</string>
 </dict>
 </plist>

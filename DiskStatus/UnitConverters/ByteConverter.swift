@@ -14,7 +14,7 @@ class ByteConverterStrategy: UnitConverterStrategy {
     let GB: Double = 1000000000
     let TB: Double = 1000000000000
     
-    func toString(size: Double) -> String {
+    func toString(_ size: Double) -> String {
         var returnValue: String = "Error"
                 
         if (size < kB) {

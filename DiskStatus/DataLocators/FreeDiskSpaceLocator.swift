@@ -11,12 +11,12 @@ import Foundation
 class FreeDiskSpaceLocator : DataLocatorStrategy {
     
     func getData() -> Double {
-        let fileManager = NSFileManager.defaultManager()
+        let fileManager = FileManager.default
         let value: Double
         do {
-            let attr = try fileManager.attributesOfFileSystemForPath(NSHomeDirectory())
+            let attr = try fileManager.attributesOfFileSystem(forPath: NSHomeDirectory())
         
-            value = attr[NSFileSystemFreeSize] as! Double
+            value = attr[FileAttributeKey.systemFreeSize] as! Double
         } catch {
             value = 0
         }

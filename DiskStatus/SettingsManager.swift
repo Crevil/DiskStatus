@@ -10,7 +10,7 @@ import Cocoa
 
 protocol SettingsManagerProtocol {
     func getRefreshRateIndex() -> Int
-    func setRefreshRateIndex(value: Int)
+    func setRefreshRateIndex(_ value: Int)
     func getRefreshRates() -> [Int]
     func getRefreshRate() -> Int
 }
@@ -21,10 +21,10 @@ class SettingsManager: NSObject, SettingsManagerProtocol {
 
     let keyRefreshRateIndex = "refreshRateIndex"
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    let defaults = UserDefaults.standard
     
     func getRefreshRateIndex() -> Int {
-        let refreshRateIndex = defaults.integerForKey(keyRefreshRateIndex)
+        let refreshRateIndex = defaults.integer(forKey: keyRefreshRateIndex)
         
         if refreshRateIndex >= refreshRates.count {
             return defaultRefreshRateIndex
@@ -41,7 +41,7 @@ class SettingsManager: NSObject, SettingsManagerProtocol {
         return refreshRates[getRefreshRateIndex()]
     }
     
-    func setRefreshRateIndex(refreshRateIndex: Int) {
+    func setRefreshRateIndex(_ refreshRateIndex: Int) {
         defaults.setValue(refreshRateIndex, forKey: keyRefreshRateIndex)
     }
 }
